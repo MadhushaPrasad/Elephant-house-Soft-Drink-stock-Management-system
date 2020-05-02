@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneCustomerReturnD" prefHeight="605.0" prefWidth="1291.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.CustomerReturnViewController">
+   <children>
+      <TableView fx:id="tblReturnDetails" layoutX="15.0" layoutY="152.0" onMouseClicked="#mouseClickedSelected" prefHeight="364.0" prefWidth="1273.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ReturnID" />
+          <TableColumn prefWidth="75.0" text="Customer ID" />
+            <TableColumn prefWidth="126.0" text="Customer First Name" />
+            <TableColumn prefWidth="128.0" text="Customer First Name" />
+            <TableColumn prefWidth="236.0" text="Address" />
+            <TableColumn prefWidth="91.0" text="Reason" />
+            <TableColumn prefWidth="87.0" text="Item Batch ID" />
+            <TableColumn prefWidth="63.0" text="Item ID" />
+            <TableColumn prefWidth="75.0" text="Item Name" />
+            <TableColumn prefWidth="75.0" text="Volume" />
+            <TableColumn prefWidth="75.0" text="Date" />
+            <TableColumn prefWidth="72.0" text="QTY" />
+            <TableColumn prefWidth="93.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" layoutX="1062.0" layoutY="565.0" onMouseClicked="#btnBack" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #0000cc; -fx-text-fill: #FFFFFF; -fx-background-radius: 15;" text="Back">
+         <font>
+            <Font name="Georgia Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSelectedDelete" layoutX="1175.0" layoutY="565.0" onMouseClicked="#btnSelectedDelete" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #cc0000; -fx-text-fill: #FFFFFF; -fx-background-radius: 15;" text="Delete Selected">
+         <font>
+            <Font name="Georgia Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="1097.0" layoutY="522.0" text="Total price">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1185.0" layoutY="523.0" text="RS:">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1204.0" layoutY="522.0" prefHeight="19.0" prefWidth="84.0" text="0000.00">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="36.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="87.0" prefHeight="29.0" prefWidth="285.0" stylesheets="@../stylesheet/Login.css" text="CUSTOMER RETURN VIEW FORM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="115.0" text="Get Details What you need">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="1260.0" layoutY="-4.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn" AnchorPane.rightAnchor="-5.0">
+         <image>
+            <Image url="@../asset/Close%20Window_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

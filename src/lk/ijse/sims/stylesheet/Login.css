@@ -1,0 +1,40 @@
+.pane{
+    -fx-background-color: #65A700;
+}
+.lbl{
+    -fx-text-fill:#FFFFFF;
+}
+.lbl2{
+    -fx-text-fill:#990000;
+}
+.anchorPane2{
+    -fx-background-color:#FFFFFF;
+   -fx-background-radius:25;
+}
+.pane1{
+    -fx-background-radius:25;
+}
+.forgotPswd:hover{
+    -fx-text-fill:#BB0808;
+}
+.loginBtn{
+    -fx-background-color: #65A700;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius:10px;
+}
+.loginBtn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius:10px;
+    -fx-text-fill:#000066;
+    -fx-border-color:black;
+    -fx-border-widthh:1px;
+    -fx-border-style:solid;
+    -fx-border-radius:10px;
+    
+}
+/*.closebtn{
+    -fx-fill:#ff6666;
+}
+.closebtn:hover{
+    -fx-fill:#FFFFFF;
+}*/

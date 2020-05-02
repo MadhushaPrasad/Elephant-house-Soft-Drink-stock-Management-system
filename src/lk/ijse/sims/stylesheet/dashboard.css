@@ -1,0 +1,56 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.ancorPane{
+    -fx-background-color: #65A700;
+}
+.btn{
+    -fx-background-color:#70B800;
+    -fx-background-radius:30 0 0 30;
+    -fx-font-weight:bold;
+    -fx-effect:dropshadow(one-pass-box,#FFFFFF,16,0.0,5,0);
+}
+.btn:hover{
+    /*    -fx-background-color:#65A700;*/
+    -fx-background-color: transparent;
+    -fx-background-radius:30 0 0 30;
+    /*    -fx-text-fill:#000066;*/
+    -fx-font-weight:bold;
+    -fx-font-size:15px;
+    -fx-border-color:black;
+    -fx-border-widthh:1px;
+    -fx-border-style:solid;
+    -fx-border-radius:30 0 0 30;
+}
+.btn:pressed{
+    -fx-background-color:#ffff1a;
+    -fx-background-radius:30 0 0 30;
+}
+.btn2{
+    -fx-background-color: #65A700;
+    -fx-background-radius:20;
+    -fx-font-size:16px;
+    -fx-font-weight:bold;
+    -fx-effect:dropshadow(one-pass-box,#FFFFFF,14,0.0,6,0);
+}
+.btn2:hover{
+    /*    -fx-background-color:#65A700;*/
+    -fx-background-color: #70B800;
+    -fx-background-radius:20;
+
+}
+.btn2:pressed{
+    -fx-background-color:transparent;
+    -fx-font-weight:bold;
+    -fx-font-size:20px;
+    -fx-border-color:black;
+    -fx-border-width:1px;
+    -fx-border-style:solid;
+    -fx-border-radius:20;
+    -fx-effect:dropshadow(one-pass-box,black,14,0.0,6,0);
+}
+.btnLogout{
+    -fx-background-radius:35;
+    -fx-effect:dropshadow(one-pass-box,grey,14,0.0,6,0);
+}

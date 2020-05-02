@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.ReportController">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="30.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="123.0" prefHeight="29.0" prefWidth="135.0" stylesheets="@../stylesheet/Login.css" text="REPORT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="150.0" text="If You need a Report Select what you neet">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnCustReport" layoutX="57.0" layoutY="255.0" onAction="#btnCustReportAC" prefHeight="101.0" prefWidth="169.0" stylesheets="@../stylesheet/customerform.css" text="Customer">
+         <styleClass>
+            <String fx:value="btnCustomer" />
+            <String fx:value="btnCustomerRegister" />
+         </styleClass></JFXButton>
+      <JFXButton layoutX="344.0" layoutY="255.0" prefHeight="101.0" prefWidth="169.0" />
+      <JFXButton layoutX="611.0" layoutY="255.0" prefHeight="101.0" prefWidth="169.0" />
+      <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="879.0" layoutY="-4.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn" AnchorPane.rightAnchor="-5.0">
+         <image>
+            <Image url="@../asset/Close%20Window_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

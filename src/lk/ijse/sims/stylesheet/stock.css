@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.pane{
+    -fx-background-color: #65A700;
+}
+.btnStockAndBatch{
+    -fx-effect:dropshadow(one-pass-box,black,14,0.0,6,0);
+}
+.btnStockAndBatchDelete{
+    -fx-font-weight:bold;
+    -fx-background-color: #ff0000;
+    -fx-background-radius:15;
+    -fx-text-fill:#FFFFFF;
+}
+.btnCbtnStockAndBatchAdd{
+    -fx-font-weight:bold;
+    -fx-background-color:#006622;
+    -fx-background-radius:15;
+    -fx-text-fill:#FFFFFF;
+}
+.btnStockAndBatchUpdate{
+    -fx-font-weight:bold;
+    -fx-background-color:#0000ff;
+    -fx-background-radius:15;
+    -fx-text-fill:#FFFFFF;
+}
+

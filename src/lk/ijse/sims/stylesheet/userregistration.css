@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.btnRegistration {
+    -fx-background-color: #65A700;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius:10px;
+}
+.btnRegistration:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius:10px;
+    -fx-text-fill:#000000;
+    -fx-border-color:black;
+    -fx-border-widthh:1px;
+    -fx-border-style:solid;
+    -fx-border-radius:10px;
+}
+.btnRegistrationClancle{
+    -fx-background-color: #b30000;
+    -fx-text-fill:#FFFFFF;
+    -fx-background-radius:10px;
+}
+.btnRegistrationClancle:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius:10px;
+    -fx-text-fill:#000000;
+    -fx-border-color:black;
+    -fx-border-widthh:1px;
+    -fx-border-style:solid;
+    -fx-border-radius:10px;
+}

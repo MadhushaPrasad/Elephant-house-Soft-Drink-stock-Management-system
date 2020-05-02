@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main" prefHeight="645.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.HomeController">
+    <stylesheets>
+        <URL value="@/lk/ijse/sims/stylesheet/dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="bodyPane" layoutX="296.0" prefHeight="664.0" prefWidth="908.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="663.0" prefWidth="299.0" stylesheets="@../stylesheet/dashboard.css">
+         <children>
+            <Label fx:id="lblStoc_management2" layoutX="14.0" layoutY="110.0" prefHeight="29.0" prefWidth="273.0" stylesheets="@../stylesheet/Login.css" text="STOCK MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="1.0" layoutY="195.0" prefHeight="436.0" prefWidth="298.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="btnDashBoard" alignment="BASELINE_LEFT" onAction="#btnDashBoardAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Dashboard">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/Dashboard_48px.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" onAction="#btnCustomerAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Customer">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/man%20(1).png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnStock" alignment="BASELINE_LEFT" onAction="#btnStockAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Stock">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/warehouse.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnItem" alignment="BASELINE_LEFT" onAction="#btnItemAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Item">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/water.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnInvoice" alignment="BASELINE_LEFT" onAction="#btnInvoiceAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Invoice">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/order.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnReturn" alignment="BASELINE_LEFT" onAction="#btnReturnAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Return">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/return.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnReport" alignment="BASELINE_LEFT" onAction="#btnReportAC" onKeyPressed="#btnDashBoardKeyPressed" prefHeight="62.0" prefWidth="299.0" styleClass="btn" stylesheets="@../stylesheet/dashboard.css" text="Report">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asset/bill.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnLogout" layoutX="103.0" layoutY="632.0" onAction="#btnLogoutAC" onKeyPressed="#btnLogoutKeyPressed" prefHeight="29.0" prefWidth="89.0" style="-fx-background-color: #ff0000; -fx-text-fill: #FFFFFF;" styleClass="btnLogout" stylesheets="@../stylesheet/dashboard.css" text="Logout" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="12.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblStoc_management" layoutX="13.0" layoutY="81.0" prefHeight="29.0" prefWidth="190.0" stylesheets="@../stylesheet/Login.css" text="WELCOME TO ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="139.0" text="K.R.PERERA &amp; SONS">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.CutomerReturnController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="664.0" prefWidth="908.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane layoutX="625.0" layoutY="369.0" prefHeight="297.0" prefWidth="207.0" rotate="66.8" style="-fx-background-radius: 65; -fx-background-color: #65A700;" />
+            <Pane layoutX="410.0" layoutY="-193.0" prefHeight="399.0" prefWidth="475.0" rotate="-109.4" style="-fx-background-radius: 65; -fx-background-color: #65A700;" />
+            <JFXTextField layoutX="46.0" layoutY="500.0" prefHeight="25.0" prefWidth="207.0" />
+            <Label layoutX="47.0" layoutY="473.0" prefHeight="21.0" prefWidth="198.0" text="Customer Last Name">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="251.0" prefHeight="21.0" prefWidth="178.0" text="Select Customer">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="270.0" prefHeight="17.0" prefWidth="119.0" text="Select Item">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="298.0" layoutY="290.0" prefHeight="25.0" prefWidth="98.0" promptText="Item ID" />
+            <JFXTextField layoutX="482.0" layoutY="286.0" />
+            <Label layoutX="481.0" layoutY="269.0" prefHeight="17.0" prefWidth="119.0" text="Item Name">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="298.0" layoutY="358.0" />
+            <Label layoutX="299.0" layoutY="341.0" prefHeight="17.0" prefWidth="119.0" text="QTY">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="484.0" layoutY="357.0" />
+            <Label layoutX="483.0" layoutY="338.0" prefHeight="17.0" prefWidth="119.0" text="Price">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="677.0" layoutY="215.0" prefHeight="25.0" prefWidth="135.0" promptText="Volume ID" />
+            <Label layoutX="674.0" layoutY="191.0" prefHeight="21.0" prefWidth="141.0" text="Select Volume">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="680.0" layoutY="343.0" prefHeight="0.0" prefWidth="88.0" text="Total">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="682.0" layoutY="367.0" text="RS:">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="730.0" layoutY="365.0" prefHeight="21.0" prefWidth="88.0" text="0000.00">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXDatePicker layoutX="676.0" layoutY="280.0" prefHeight="28.0" prefWidth="135.0" promptText="Select Return Date" />
+            <JFXButton fx:id="btnCreate" layoutX="331.0" layoutY="445.0" onAction="#btnCreate" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #006622; -fx-background-radius: 15; -fx-text-fill: #FFFFFF;" styleClass="btnCustomer" stylesheets="@../stylesheet/customerform.css" text="Create">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" layoutX="446.0" layoutY="446.0" onMouseClicked="#btnUpdate" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #0000cc; -fx-background-radius: 15; -fx-text-fill: #FFFFFF;" styleClass="btnCustomer" stylesheets="@../stylesheet/customerform.css" text="Update">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnReturnView" layoutX="559.0" layoutY="447.0" onMouseClicked="#btnReturnView" prefHeight="29.0" prefWidth="135.0" style="-fx-background-color: #ffb200; -fx-background-radius: 15;" styleClass="btnCustomer" stylesheets="@../stylesheet/customerform.css" text="View Returns">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="482.0" layoutY="193.0" prefHeight="19.0" prefWidth="161.0" text="Select Item Batch ID">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="481.0" layoutY="214.0" prefHeight="25.0" prefWidth="161.0" promptText="Batch ID" />
+            <JFXTextField layoutX="42.0" layoutY="619.0" prefHeight="25.0" prefWidth="207.0" promptText="Type the reason Why you return" />
+            <Label layoutX="46.0" layoutY="601.0" text="Reason">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="42.0" layoutY="565.0" prefHeight="25.0" prefWidth="207.0" />
+            <Label layoutX="44.0" layoutY="541.0" prefHeight="21.0" prefWidth="184.0" text="Customer Address">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="48.0" layoutY="431.0" prefHeight="25.0" prefWidth="178.0" promptText="Customer Type" />
+            <Label layoutX="47.0" layoutY="401.0" prefHeight="21.0" prefWidth="178.0" text="Select Customer Type">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="47.0" layoutY="360.0" prefHeight="25.0" prefWidth="207.0" />
+            <Label layoutX="47.0" layoutY="334.0" prefHeight="21.0" prefWidth="170.0" text="Customer First Name">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="48.0" layoutY="288.0" prefHeight="25.0" prefWidth="178.0" promptText="Customer ID" />
+            <JFXTextField layoutX="49.0" layoutY="214.0" prefHeight="25.0" prefWidth="178.0" />
+            <Label layoutX="47.0" layoutY="191.0" prefHeight="21.0" prefWidth="192.0" text="Customer Return ID">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" layoutY="192.0" prefHeight="21.0" prefWidth="150.0" text="Search from ID">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="298.0" layoutY="215.0" prefHeight="25.0" prefWidth="150.0" />
+            <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="884.0" layoutY="-3.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn" AnchorPane.rightAnchor="-5.0">
+               <image>
+                  <Image url="@../asset/Close%20Window_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="44.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="91.0" prefHeight="29.0" prefWidth="239.0" stylesheets="@../stylesheet/Login.css" text="CUSTOMER RETURN FORM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="119.0" text="Fill the form for Customer Return">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

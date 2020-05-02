@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneItem" prefHeight="664.0" prefWidth="908.0" styleClass="pane" stylesheets="@../stylesheet/item.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.ItemController">
+   <children>
+      <Pane layoutX="486.0" layoutY="217.0" prefHeight="374.0" prefWidth="388.0" rotate="49.4" style="-fx-background-radius: 65; -fx-background-color: #FFFFFF;" />
+      <Pane layoutX="-154.0" layoutY="17.0" prefHeight="487.0" prefWidth="690.0" rotate="32.7" style="-fx-background-color: #FFFFFF; -fx-background-radius: 65;" />
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="52.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="125.0" prefHeight="29.0" prefWidth="110.0" stylesheets="@../stylesheet/Login.css" text="ITEM FORM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="155.0" text="Fill the form to do Item tasks">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmdBatchID" layoutX="53.0" layoutY="222.0" onAction="#cmdBatchIDAc" prefHeight="25.0" prefWidth="188.0" promptText="Select  Item Batch ID" />
+      <JFXTextField fx:id="txtItemID" layoutX="53.0" layoutY="278.0" onAction="#txtItemIDAc" prefHeight="25.0" prefWidth="188.0" promptText="Item ID" />
+      <JFXTextField fx:id="txtItemName" layoutX="51.0" layoutY="326.0" onAction="#txtItemNameAc" prefHeight="25.0" prefWidth="188.0" promptText="Item Name" />
+      <JFXComboBox fx:id="cmdVolumeID" layoutX="354.0" layoutY="257.0" onAction="#cmdVolumeIDAC" prefHeight="25.0" prefWidth="188.0" promptText="Select  Volume ID" />
+      <JFXDatePicker fx:id="detpickerMFDate" layoutX="51.0" layoutY="376.0" onAction="#detpickerMFDateAc" prefHeight="28.0" prefWidth="188.0" promptText="Manufacture Date" />
+      <JFXDatePicker fx:id="dtPickerEX" layoutX="50.0" layoutY="424.0" onAction="#dtPickerEX" prefHeight="28.0" prefWidth="188.0" promptText="Expiry Date" />
+      <JFXButton fx:id="btnVIewItemBatch" layoutX="255.0" layoutY="224.0" onAction="#btnVIewItemBatchAC" stylesheets="@../stylesheet/item.css" text="View Batch">
+         <styleClass>
+            <String fx:value="btnItem" />
+            <String fx:value="btnView" />
+         </styleClass></JFXButton>
+      <TableView fx:id="tblItem" layoutX="47.0" layoutY="462.0" prefHeight="200.0" prefWidth="534.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Batch ID" />
+          <TableColumn prefWidth="75.0" text="Item ID" />
+            <TableColumn prefWidth="75.0" text="Volum ID" />
+            <TableColumn prefWidth="103.0" text="Item Name" />
+            <TableColumn prefWidth="109.0" text="Manufacture Date" />
+            <TableColumn prefWidth="95.0" text="Expiry Date" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtVolumeID" layoutX="622.0" layoutY="281.0" onAction="#txtVolumeIDAc" promptText="Volume ID" />
+      <JFXTextField fx:id="txtVolumeSize" layoutX="622.0" layoutY="325.0" onAction="#txtVolumeSizeAc" promptText="Volume Size" />
+      <JFXTextField fx:id="txtQty" layoutX="622.0" layoutY="367.0" onAction="#txtQtyAc" promptText="QTY" />
+      <JFXTextField fx:id="txtUnitePrice" layoutX="623.0" layoutY="410.0" onAction="#txtUnitePriceAC" promptText="Unite Price" />
+      <JFXButton fx:id="btnAdd" layoutX="820.0" layoutY="367.0" onAction="#btnAddAc" stylesheets="@../stylesheet/item.css" text="Add">
+         <styleClass>
+            <String fx:value="btnItem" />
+            <String fx:value="btnItemAdd" />
+         </styleClass></JFXButton>
+      <JFXButton fx:id="btnViewVol" layoutX="798.0" layoutY="414.0" onAction="#btnViewVolAc" prefHeight="25.0" prefWidth="89.0" styleClass="btnView" stylesheets="@../stylesheet/item.css" text="View Volume" />
+      <JFXButton fx:id="btnItemAdd" layoutX="319.0" layoutY="320.0" onAction="#btnItemAddAc" text="Add">
+         <styleClass>
+            <String fx:value="btnItem" />
+            <String fx:value="btnItemAdd" />
+         </styleClass></JFXButton>
+      <JFXButton fx:id="btnItemUpdate" layoutX="310.0" layoutY="364.0" onAction="#btnItemUpdateAC" text="Update">
+         <styleClass>
+            <String fx:value="btnItem" />
+            <String fx:value="btnItemUpdate" />
+         </styleClass></JFXButton>
+      <JFXButton fx:id="btnItemDelete" layoutX="314.0" layoutY="410.0" onAction="#btnItemDeleteAC" text="Delete">
+         <styleClass>
+            <String fx:value="btnItem" />
+            <String fx:value="btnItemDelete" />
+         </styleClass></JFXButton>
+      <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="879.0" layoutY="-4.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn" AnchorPane.rightAnchor="-5.0">
+         <image>
+            <Image url="@../asset/Close%20Window_48px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSearchItem" layoutX="355.0" layoutY="196.0" onAction="#txtSearchItemAc" promptText="search Item" />
+      <Button fx:id="btnSearchtem" layoutX="494.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnSearchtemAC" prefHeight="17.0" prefWidth="29.0">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Search_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <JFXTextField fx:id="txtSearchVolume" layoutX="708.0" layoutY="240.0" onAction="#txtSearchVolume" promptText="search Item Volume" />
+      <Button fx:id="btnSearchItemVolume" layoutX="847.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnSearchItemVolumeAC" prefHeight="17.0" prefWidth="29.0">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Search_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

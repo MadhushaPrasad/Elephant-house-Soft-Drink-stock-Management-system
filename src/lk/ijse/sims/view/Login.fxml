@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="678.0" stylesheets="@../stylesheet/Login.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.LoginController">
+   <children>
+      <AnchorPane fx:id="mainAncorPane" prefHeight="453.0" prefWidth="593.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../stylesheet/Login.css">
+         <children>
+            <Pane prefHeight="519.0" prefWidth="291.0" styleClass="pane" stylesheets="@../stylesheet/Login.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/Elephant_House_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="261.0" prefHeight="18.0" prefWidth="96.0" styleClass="lbl" stylesheets="@../stylesheet/Login.css" text="WELCOME TO">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="286.0" styleClass="lbl" stylesheets="@../stylesheet/Login.css" text="K.R.PERERA &amp; SONS">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="315.0" prefHeight="17.0" prefWidth="224.0" styleClass="lbl" stylesheets="@../stylesheet/Login.css" text="Authorised Distributor : Elephant Soft Drinks">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="254.0" prefHeight="519.0" prefWidth="424.0" stylesheets="@../stylesheet/Login.css">
+               <children>
+                  <ImageView fitHeight="185.0" fitWidth="386.0" layoutX="26.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/elephant-house-13-744x373.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/Elephant_House_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="24.0" layoutY="81.0" prefHeight="29.0" prefWidth="153.0" stylesheets="@../stylesheet/Login.css" text="WELCOME BACK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="109.0" text="Sign in to continue">
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtEmail" layoutX="83.0" layoutY="341.0" onAction="#txtEmailAction" onMouseClicked="#emailMouseClick" prefHeight="25.0" prefWidth="252.0" promptText="Email" />
+                  <JFXPasswordField fx:id="txtPassword" layoutX="83.0" layoutY="393.0" onAction="#txtPasswordAction" onMouseClicked="#passwordMouseClick" prefHeight="25.0" prefWidth="252.0" promptText="Password" />
+                  <JFXButton fx:id="btnLogin" layoutX="166.0" layoutY="462.0" onAction="#login" prefHeight="25.0" prefWidth="117.0" styleClass="loginBtn" stylesheets="@../stylesheet/Login.css" text="Login" />
+                  <Hyperlink fx:id="hyplForgotPassword" layoutX="267.0" layoutY="433.0" onAction="#forgotPassword" prefHeight="17.0" prefWidth="102.0" styleClass="forgotPswd" stylesheets="@../stylesheet/Login.css" text="Forgot Password?" />
+                  <Label layoutX="83.0" layoutY="429.0" opacity="0.49" text="New user?" />
+                  <Hyperlink fx:id="hyplSignup" layoutX="138.0" layoutY="426.0" onAction="#signUp" prefHeight="17.0" prefWidth="102.0" styleClass="forgotPswd" stylesheets="@../stylesheet/Login.css" text="Signup" textFill="#0066b4" />
+                  <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="399.0" layoutY="-5.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn">
+                     <image>
+                        <Image url="@../asset/Close%20Window_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblPasswordError" layoutX="233.0" layoutY="420.0" prefHeight="17.0" prefWidth="102.0" styleClass="lbl2" stylesheets="@../stylesheet/Login.css" />
+                  <Label fx:id="lblEmailError" layoutX="254.0" layoutY="369.0" prefHeight="17.0" prefWidth="80.0" styleClass="lbl2" stylesheets="@../stylesheet/Login.css" />
+               </children>
+               <styleClass>
+                  <String fx:value="pane1" />
+                  <String fx:value="anchorPane2" />
+               </styleClass>
+               <effect>
+                  <Glow level="0.29" />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

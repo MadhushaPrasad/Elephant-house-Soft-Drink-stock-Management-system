@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="908.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sims.controller.StockController">
+    <stylesheets>
+        <URL value="@/lk/ijse/sims/stylesheet/stock.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="664.0" prefWidth="908.0" styleClass="pane" stylesheets="@../stylesheet/stock.css">
+         <children>
+            <Pane layoutX="517.0" layoutY="123.0" prefHeight="460.0" prefWidth="377.0" rotate="-26.6" style="-fx-background-color: #FFFFFF; -fx-background-radius: 65;" />
+            <Pane layoutX="-45.0" layoutY="6.0" prefHeight="503.0" prefWidth="592.0" rotate="41.6" style="-fx-background-color: #FFFFFF; -fx-background-radius: 65;" />
+            <JFXTextField fx:id="txtStockID" layoutX="29.0" layoutY="247.0" onAction="#txtStockIDAC" onKeyPressed="#txtStockIDKeyPressed" prefHeight="25.0" prefWidth="283.0" promptText="Stock ID" />
+            <JFXTextField fx:id="txtStockPrice" layoutX="28.0" layoutY="295.0" onAction="#txtStockPriceAC" onKeyPressed="#stPriceKey" prefHeight="25.0" prefWidth="283.0" promptText="Stock Price" />
+            <JFXDatePicker fx:id="dtPickerStockDate" layoutX="29.0" layoutY="355.0" prefHeight="28.0" prefWidth="283.0" promptText="Stock_Date" />
+            <TableView fx:id="tblStock" layoutX="29.0" layoutY="412.0" prefHeight="240.0" prefWidth="430.0">
+              <columns>
+                <TableColumn prefWidth="103.0" text="Stock_ID" />
+                <TableColumn prefWidth="176.0" text="Stock_Price" />
+                  <TableColumn prefWidth="150.0" text="Stock_Date" />
+              </columns>
+            </TableView>
+            <JFXComboBox fx:id="cmbStockID" layoutX="515.0" layoutY="271.0" onAction="#cmbStockID" prefHeight="25.0" prefWidth="146.0" />
+            <JFXTextField fx:id="txtItemBatch" layoutX="515.0" layoutY="314.0" onAction="#txtItemBatchAc" prefHeight="25.0" prefWidth="146.0" promptText="Item Batch ID" />
+            <JFXTextField fx:id="txtBatchPrice" layoutX="516.0" layoutY="356.0" onAction="#txtBatchPriceAC" prefHeight="25.0" prefWidth="146.0" promptText="Batch Price" />
+            <JFXDatePicker fx:id="dtIBatchMF" layoutX="711.0" layoutY="265.0" onAction="#dtIBatchMFAc" promptText="Manufacture  Date" />
+            <JFXDatePicker fx:id="dtBatchEX" layoutX="713.0" layoutY="309.0" onAction="#dtBatchEXAc" promptText="Expiry Date" />
+            <TableView fx:id="tblBatchView" layoutX="516.0" layoutY="410.0" prefHeight="240.0" prefWidth="377.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Stock_ID" />
+                <TableColumn prefWidth="75.0" text="Batch_ID" />
+                  <TableColumn prefWidth="75.0" text="MF Date" />
+                  <TableColumn prefWidth="75.0" text="Price" />
+                  <TableColumn prefWidth="75.0" text="EX Date" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnBatchAdd" layoutX="685.0" layoutY="358.0" onAction="#btnBatchAddAc" stylesheets="@../stylesheet/stock.css" text="Add">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnCbtnStockAndBatchAdd" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnBatchUpdate" layoutX="742.0" layoutY="358.0" onAction="#btnBatchUpdateAc" stylesheets="@../stylesheet/stock.css" text="Update">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnStockAndBatchUpdate" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnBatchDelete" layoutX="810.0" layoutY="358.0" onAction="#btnBatchDeleteAc" stylesheets="@../stylesheet/stock.css" text="Delete">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnStockAndBatchDelete" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnADD" layoutX="342.0" layoutY="271.0" onAction="#btnADDAc" stylesheets="@../stylesheet/stock.css" text="Add">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnCbtnStockAndBatchAdd" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" layoutX="333.0" layoutY="327.0" onAction="#btnUpdateAc" stylesheets="@../stylesheet/stock.css" text="Update">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnStockAndBatchUpdate" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" layoutX="334.0" layoutY="380.0" onAction="#btnDeleteAc" stylesheets="@../stylesheet/stock.css" text="Delete">
+               <styleClass>
+                  <String fx:value="btnStockAndBatch" />
+                  <String fx:value="btnStockAndBatchDelete" />
+               </styleClass>
+            </JFXButton>
+            <ImageView fx:id="close" fitHeight="29.0" fitWidth="35.0" layoutX="884.0" layoutY="-3.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" styleClass="closebtn" AnchorPane.rightAnchor="-5.0">
+               <image>
+                  <Image url="@../asset/Close%20Window_48px.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtSearchBatch" layoutX="705.0" layoutY="203.0" onAction="#txtSearchBatchAc" promptText="search Item Batch" />
+            <Button fx:id="btnSearchItemBatch" layoutX="844.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnSearchItemBatchAC" prefHeight="17.0" prefWidth="29.0">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/Search_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <JFXTextField fx:id="txtStockSearch" layoutX="195.0" layoutY="205.0" onAction="#txtStockSearchAc" promptText="search Stock" />
+            <Button fx:id="btnSearchStocka" layoutX="334.0" layoutY="207.0" mnemonicParsing="false" onAction="#btnSearchStockaAc" prefHeight="17.0" prefWidth="29.0">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/Search_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="42.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="115.0" prefHeight="29.0" prefWidth="110.0" stylesheets="@../stylesheet/Login.css" text="STOCK AND">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="163.0" text="Fill the form for Add Stock">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="137.0" prefHeight="29.0" prefWidth="171.0" stylesheets="@../stylesheet/Login.css" text="ITEM BATCH FORM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="250.0" prefHeight="17.0" prefWidth="85.0" text="Select Stock ID" />
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="714.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Elephant_House_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="715.0" layoutY="125.0" prefHeight="29.0" prefWidth="110.0" stylesheets="@../stylesheet/Login.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="714.0" layoutY="173.0" text="Fill the form for Add a Batch">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="714.0" layoutY="147.0" prefHeight="29.0" prefWidth="171.0" stylesheets="@../stylesheet/Login.css" text="ITEM BATCH FORM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
